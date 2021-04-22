@@ -1,6 +1,6 @@
 ## Introduction
 
-Instant file share application makes file sharing easy with all viewers who are active on the page. This application makes the best use of Laravel web socket, Broadcasting and Laravel Echo to deliver files instantly with the users active on the page without needing them to refresh the page.
+Instant file share application makes file sharing easier with all the users. This application makes the best use of Laravel web socket, Broadcasting and Laravel Echo to deliver files instantly to the users active on the page without needing them to refresh the page.
 
 User 1 uploading files
 ![File Share Screenshot 1](https://github.com/shub300/instant-file-share/blob/master/public/assets/images/ss1.png?raw=true)
@@ -31,4 +31,4 @@ For starting WebSocket server:
 ```bash
 php artisan websocket:serve
 ```
-## Open the app and start Sharing
+## Open The App And Start Sharing
