@@ -41,11 +41,11 @@ class ManageFileController extends Controller
             }
         }
         if(count($file_paths)){
-            $send_response = ['status_code'=>1,'status_text'=>'File sent successfully!','data'=>$file_paths,'mid'=>bin2hex(time().random_bytes(5))];
+            $send_response = ['status_code'=>1,'status_text'=>'File(s) sent successfully!','data'=>$file_paths,'mid'=>bin2hex(time().random_bytes(5))];
             echo json_encode($send_response);
             event(new fileSendMessage($send_response));
         }else{
-            echo json_encode(['status_code'=>0,'status_text'=>'File upload failed']);
+            echo json_encode(['status_code'=>0,'status_text'=>'File(s) upload failed']);
         }
     }
 }

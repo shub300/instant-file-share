@@ -274,7 +274,7 @@
         $('#filecount').val(filecount);
         if (newmsg) {
             Snackbar.show({
-                text: 'New file received',
+                text: 'New file(s) received',
                 showAction: true,
                 pos: 'bottom-center',
                 actionTextColor: '#fff'

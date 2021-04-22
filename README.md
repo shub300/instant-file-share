@@ -15,7 +15,7 @@ User 2 receives files instantly on their end
 
 - **[Laravel Websockets](https://beyondco.de/docs/laravel-websockets/getting-started/introduction)**
 - **[Laravel Echo](https://laravel.com/docs/8.x/broadcasting)**
-- **[Bootstrap & Dropzone js]**
+- **Bootstrap & Dropzone js**
 
 ## How To Setup
 
@@ -31,4 +31,4 @@ For starting WebSocket server:
 ```bash
 php artisan websocket:serve
 ```
-Open the app and start Sharing
+## Open the app and start Sharing
