@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css" />
     <link rel="stylesheet" href="{{ asset('public/plugins/snackbar/snackbar.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/home.css') }}">
-    <style>
-
-    </style>
 </head>
 <!-- end::Head -->
 <!-- end::Body -->
@@ -19,9 +16,14 @@
 <body>
 
     <div class="container">
+        <div class="row top-row ">
+            <div class="col-md-3 col-sm-3 col-xs-3"></div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <h2 class="text-center">Instant File Share</h2>
+            </div>
+        </div>
         <div class="row mt-10 ml-10 mr-10 ">
             <div class="col-md-12 col-sm-12 col-xs-12 item_row">
-                <h2 class="text-center">Live File Sharing</h2>
                 <input type="hidden" id="fileiconpath" value="{{ asset('public/assets/images/file_icon2.png') }}" />
                 <div id="dropzone">
                     <form action="{{ url('UpdateFile') }}" method="post" class="dropzone" id="uploadWidget">
@@ -29,7 +31,7 @@
                             <span class="text">
                                 <img style="width: 30px;" src="{{ asset('public/assets/images/file_icon.png') }}"
                                     alt="file icon" />
-                                Drop files here or click to upload.
+                                Drop Files Here Or Click
                             </span>
                         </div>
                         <div id="preview_container">

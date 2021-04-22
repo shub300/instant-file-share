@@ -172,3 +172,59 @@
     border-radius: 50%;
     display: inline-block;
 }
+
+#dropzoneerror {
+    display: none !important;
+}
+
+.top-row{
+    margin:15px;
+}
+
+h2 {
+    position: relative;
+    margin: 0 auto 20px;
+    padding: 10px 40px;
+    text-align: center;
+    background-color: #f09819;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  h2::before, h2::after {
+    content: '';
+    width: 80px;
+    height: 100%;
+    background-color: #ff512f;
+  
+    /* position ribbon ends behind and slightly lower */
+    position: absolute;
+    z-index: -1;
+    top: 20px;
+    
+    /* clip ribbon end shape */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+  
+    /* draw and position the folded ribbon bit */
+    background-image: linear-gradient(45deg, transparent 50%, #5d3922 50%);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  
+  h2::before {
+    left: -60px;
+  }
+  
+  h2::after {
+    right: -60px;
+    transform: scaleX(-1); /* flip horizontally */
+  }
+  
+  /* everything below is for demo appearances and not important to the concept */
+
+  
+  @media (max-width: 400px) {
+    h2 { font-size: 1.5rem; }
+  }
+  
