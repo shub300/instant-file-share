@@ -56,7 +56,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <button type="button" class="btn upload-btn pull-right" id="update-btn" style=""><i
+                <button type="button" class="btn upload-btn pull-right" id="update-btn"><i
                         class="fa fa-upload"></i> Upload </button>
             </div>
         </div>

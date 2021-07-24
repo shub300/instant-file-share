@@ -25,10 +25,17 @@ After downloading the app do the following:
 npm install
 
 composer update
+
+Rename .env.example to .env
+
 ```
 For starting WebSocket server:
 
 ```bash
-php artisan websocket:serve
+php artisan websockets:serve
 ```
+
+### Access websocket log messages in UI
+http://project-url/laravel-websockets
+
 ## Open The App And Start Sharing
